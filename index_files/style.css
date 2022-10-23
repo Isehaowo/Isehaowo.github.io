@@ -6,6 +6,9 @@
   box-sizing: border-box;
 }
 
+body{
+    background-color: #73a7bd;
+}
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -25,6 +28,7 @@
 }
 
 h1 {
+  color: #dbdbdb;
   font-size: 6vw;
   line-height: 1.1;
   z-index:2;
