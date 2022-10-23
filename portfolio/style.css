@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #0e1212;
+}
+
+/* Header */
+
+li, a, button{
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    transition: ease-in 1s;
+}
+
+header {
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    padding: 30px 10%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header h1{
+    color: #dbdbdb;
+    font-weight: 300;
+    padding-bottom: 5px;
+    position: relative;
+    transition: ease-in 1s;
+}
+
+
+b{
+    color: #682ae9;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: #682ae9;
+}
+
+.active{
+    color: #777;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: #682ae9;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: #682ae9;
+    opacity: 0.8;
+}
+
+/* Middle */
+
+.split{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    box-sizing: border-box;
+}
+
+.container{
+    transition: ease-in s;
+    padding-top: 20vh;
+    font-family: 'Montserrat', sans-serif;
+    color: #edf0f1;
+    font-weight: 500;
+    margin: 0 25vw;
+}
+
+.container h1{
+    font-size: 6vw;
+}
+
+.wrapper{
+    min-height: 100vh;
+    position: relative;
+    transition: opacity .5s linear;
+    padding-bottom: 20vh;
+    overflow: hidden;
+}
+
+.wrapper::before{
+    content: "";
+    width: 2px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    width: 1px;
+    top: 20vh;
+    left: calc(25vw - 2rem);
+    opacity: 0.3;
+    background: #682ae9 linear-gradient(180deg,#555,rgba(85,85,85,0) 20vh);
+    overflow: hidden;
+    z-index: 99;
+}
+
+.-upper{
+    padding-top: 4vh;
+    color: #edf0f1;
+    opacity: 0.8;
+}
+.-lower{
+    padding-top: 4vh;
+    opacity: 0.6;
+}
+
+.second{
+    margin: 50vw 0;
+}
+
+
+.card{
+    color: #555;
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    margin: 20px;
+    position: relative;
+    opacity: 0.8;
+    transition: ease 0.5s;
+}
+
+.card::after{
+    margin-right: 100px;
+}
+
+.card h1{
+    font-size: 20px;
+}
+
+.card:hover{
+    transform: translate(15px);
+}
+
+.card .two{
+    font-size: smaller;
+    display: inline-flex;
+}
+
+.three{
+    margin: 1% 1%;
+    overflow: hidden;
+}
+
+.card button{
+    font-size: 1vw;
+}
+
+/* Spine */
+
+.spine{
+    pointer-events: none;
+    position: fixed;
+    top: 28vh;
+    bottom: 0;
+    left: calc(25vw - 2rem);
+    z-index: 1;
+    width: 1px;
+    opacity: 1;
+    background: #682ae9 linear-gradient(0deg,#555 1rem,rgba(85,85,85,0) 20vh);
+}
+
+.spine-target{
+    pointer-events: none;
+    position: fixed;
+    top: calc(28vh - 8px);
+    left: calc(25vw - 2rem - 4px);
+    width: 9px;
+    height: 9px;
+    z-index: 2;
+}
+
+.circle{
+    width: 9px;
+    height: 9px;
+    border-radius: 3rem;
+    border: 1px solid #682ae9;
+    background-color: rgb(89, 24, 223);
+    opacity: 1;
+}
+
+
+/* Footer */
+
+footer{
+    color: #edf0f1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 30px 10%;
+    z-index: 100;
+}
+
+footer a{
+    opacity: 0.8;
+}
+
+.socials__links{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 50px;
+    list-style: none;
+    transition: all 0.3s ease 0s;
+}
+
+.socials__links a{
+    margin: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+.project__links li, a{
+    list-style: none;
+    transition: all 0.3s ease 0s;
+}
+
+.socials__links a:hover{
+    color: #682ae9;
+    cursor: pointer;
+}
+
+.project__links a:hover{
+    color: #682ae9;
+    cursor: pointer;
+}
