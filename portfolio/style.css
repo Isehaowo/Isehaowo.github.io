@@ -44,6 +44,9 @@ b{
     color: #682ae9;
 }
 
+h3{
+    color: #232329;
+}
 .logo{
     cursor: pointer;
 }
@@ -146,7 +149,7 @@ button:hover{
 .card{
     color: #555;
     padding: 35px;
-    background-color: #fff;
+    background-color: #7f7f99;
     border-radius: 20px;
     width: auto;
     height: auto;
@@ -165,7 +168,7 @@ button:hover{
 }
 
 .card:hover{
-    transform: translate(15px);
+    transform: translate(25px);
 }
 
 .card .two{
